@@ -60,9 +60,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={token ? <Profile /> : <Login />} />
-        <Route path="/create" element={token ? <CreateBill /> : <Login />} />
-        <Route path="/revenue" element={token ? <Revenue /> : <Login />} />
+        <Route path="/profile" element={ <Profile /> } />
+        <Route path="/create" element={<CreateBill /> } />
+        <Route path="/revenue" element={<Revenue /> } />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
