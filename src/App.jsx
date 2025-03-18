@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import CreateBill from './pages/CreateBill';
 import Revenue from './pages/Revenue';
-import Login from './components/login';
+import Login from './components/Login';
 import Register from './components/Register';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
