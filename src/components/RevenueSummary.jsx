@@ -34,7 +34,11 @@ const RevenueSummary = () => {
         Monthly Revenue Summary
       </Typography>
       <Table aria-label="Revenue Summary Table">
-        <TableHead>
+        <TableHead   sx={{
+    border: '2px solid black',
+    borderBottom: '2px solid black' 
+  }}
+>
           <TableRow>
             <TableCell>Month</TableCell>
             <TableCell>Year</TableCell>

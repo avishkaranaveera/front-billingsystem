@@ -60,7 +60,11 @@ const BillList = () => {
   return (
     <TableContainer component={Paper} style={{ marginTop: '20px' }}>
       <Table aria-label="Bills Table">
-        <TableHead>
+         <TableHead   sx={{
+            border: '2px solid black',
+            borderBottom: '2px solid black' 
+          }}
+        >
           <TableRow>
             <TableCell>ID</TableCell>
             <TableCell>Customer Name</TableCell>

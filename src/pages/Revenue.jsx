@@ -1,12 +1,14 @@
 
 import React from 'react';
 import RevenueSummary from '../components/RevenueSummary';
+import { Grid2 } from '@mui/material';
 
 const Revenue = () => {
   return (
-    <div className="container">
-      <RevenueSummary />
-    </div>
+<Grid2 className="container" sx={{ padding: 2 }}>
+  <RevenueSummary />
+</Grid2>
+
   );
 };
 

@@ -47,12 +47,32 @@ function App() {
             </>
           ) : (
             <>
-              <Button color="inherit" component={Link} to="/login">
-                Login
-              </Button>
-              <Button color="inherit" component={Link} to="/register">
-                Register
-              </Button>
+            <Button 
+              sx={{ 
+                backgroundColor: '#BAD6F1', 
+                color: 'black', 
+                '&:hover': { backgroundColor: '#a1157e',color: 'white' }, 
+                marginRight: 2 // Adds space between buttons
+              }} 
+              component={Link} 
+              to="/login"
+            >
+              Login
+            </Button>
+
+            <Button 
+              sx={{ 
+                backgroundColor: '#113253', 
+                color: 'white', 
+                '&:hover': { backgroundColor: '#e68900' } 
+              }} 
+              component={Link} 
+              to="/register"
+            >
+              Register
+            </Button>
+
+
             </>
           )}
         </Toolbar>
@@ -60,9 +80,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={token ? <Profile /> : <Login />} />
-        <Route path="/create" element={token ? <CreateBill /> : <Login />} />
-        <Route path="/revenue" element={token ? <Revenue /> : <Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/create" element={ <CreateBill /> } />
+        <Route path="/revenue" element={<Revenue /> } />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
